@@ -4,7 +4,7 @@ import Header from './Header';
 import WithBackButton from './HOC';
 
 
-const EnhancedHeader = WithBackButton(Header);
+const HeaderWithBackButton = WithBackButton(Header);
 
 
 class EmployeeInfo extends React.Component {   
@@ -12,7 +12,7 @@ class EmployeeInfo extends React.Component {
     render(){
         return (
             <div>
-                <EnhancedHeader onBackClick={this.props.onBackClick} requiresBackButton={true} title="Employee Info"/>
+                <HeaderWithBackButton onBackClick={this.props.onBackClick} title="Employee Info"/>
                 <div className="info-container">
                     <div className="image-holder">
                         <img src={this.props.currentEmployee.profileImage} alt="display-profile"/>

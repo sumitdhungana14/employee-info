@@ -1,11 +1,11 @@
 import React from 'react';
 
-const WithBackButton = Component => {
+const WithBackButton = (Component, requiresBackButton = true) => {
     return function(props){
-        const { onBackClick, requiresBackButton, ...otherProps } = props;
+        const { onBackClick, ...otherProps } = props;
         if(requiresBackButton){
             return (
-                <Component {...otherProps}  requiresBackButton={requiresBackButton} onBackClick={onBackClick} />
+                <Component {...otherProps} requiresBackButton={requiresBackButton} onBackClick={onBackClick} />
             )
         }
         return (

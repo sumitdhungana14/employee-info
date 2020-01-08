@@ -8,7 +8,7 @@ import Loading from './Loading';
 
 import WithBackButton from './HOC.js';
 
-const EnhancedHeader = WithBackButton(Header);
+const EnhancedHeader = WithBackButton(Header, false);
 
 class App extends React.Component {
   
@@ -48,7 +48,7 @@ class App extends React.Component {
     return (
       <div className="App">
           {
-            this.state.isListDisplayed ? <EnhancedHeader requiresBackButton={false} title="Employee List" /> : ''
+            this.state.isListDisplayed ? <EnhancedHeader title="Employee List" /> : ''
           }
           { 
             this.state.isListDisplayed ? 
