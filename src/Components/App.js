@@ -4,8 +4,9 @@ import '../Styles/App.css';
 import List from './List';
 import EmployeeInfo from './EmployeeInfo';
 import Header from './Header';
-import WithBackButton from './HOC.js';
 import Loading from './Loading';
+
+import WithBackButton from './HOC.js';
 
 const EnhancedHeader = WithBackButton(Header);
 

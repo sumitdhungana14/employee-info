@@ -20,6 +20,10 @@ code {
   border: solid 2px grey;
   border-radius: 60px;
 }
+.list-item:hover {
+  background-color: grey;
+}
+
 
 .list-item span{
  padding-left: 20px;
