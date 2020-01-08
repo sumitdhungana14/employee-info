@@ -18,7 +18,7 @@ code {
   display: flex;
   align-items: center;
   border: solid 2px grey;
-  border-radius: 15px;
+  border-radius: 60px;
 }
 
 .list-item span{
