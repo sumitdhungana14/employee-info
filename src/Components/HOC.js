@@ -8,9 +8,6 @@ const WithBackButton = (Component, requiresBackButton = true) => {
                 <Component {...otherProps} requiresBackButton={requiresBackButton} onBackClick={onBackClick} />
             )
         }
-        return (
-            <Component {...otherProps} requiresBackButton={requiresBackButton} marginLeft="582px"/>
-        )
     }
 }
 

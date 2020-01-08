@@ -3,12 +3,8 @@ import '../Styles/App.css';
 
 import List from './List';
 import EmployeeInfo from './EmployeeInfo';
-import Header from './Header';
 import Loading from './Loading';
 
-import WithBackButton from './HOC.js';
-
-const EnhancedHeader = WithBackButton(Header, false);
 
 class App extends React.Component {
   
@@ -47,9 +43,6 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-          {
-            this.state.isListDisplayed ? <EnhancedHeader title="Employee List" /> : ''
-          }
           { 
             this.state.isListDisplayed ? 
               !this.state.employees.length ? <Loading /> : <List employees={this.state.employees} onClick={this.showEmployeeInfo}/> : 

@@ -1,6 +1,8 @@
 import React from 'react';
 
 import ListItem from './ListItem';
+import Header from './Header';
+
 
 const List = props => {
 
@@ -16,6 +18,7 @@ const List = props => {
     })
     return (
         <div className="list-container">
+             <Header title="Employee List" marginLeft="582px"/>
             {employeeList}
         </div>
     )
